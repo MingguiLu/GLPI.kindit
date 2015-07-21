@@ -1,0 +1,26 @@
+首页：
+进入首页  /index.asp
+
+工作日志：
+查看工作日志  /Item/list.asp?id=1179
+
+helpdesk：
+查看helpdesk记录  /Item/list.asp?id=1180
+
+操作流程：
+IT部    /Item/list.asp?id=1181
+销售部  /Item/list.asp?id=1182
+网站部  /Item/list.asp?id=1183
+
+技术姿势：
+outlook  /Item/list.asp?id=1184
+ie       /Item/list.asp?id=1185
+mdt      /Item/list.asp?id=1186
+symantec /Item/list.asp?id=1187
+dell     /Item/list.asp?id=1188
+hp print /Item/list.asp?id=1189
+
+搜索：
+站内搜索 
+百度搜索
+google搜索 

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+  <!--头部搜索-->
+<div class="clear"></div>
+<div class="searchbg">
+   <div class="search">搜索"<span style="color:#FF0000">{@search.keyword}</span>",本次共找到相关网页约<span style="color:#FF0000">{@search.totalput}</span>条,用时<span style="color:#FF0000">{@search.leavetime}</span>秒</div>
+   <div class="tags"></div>
+</div>
+<div class="clear"></div>
+
+   <div class="search_left">
+	<div class="articlesearch">
+	      <div class="search_lstitle">搜索结果</div>
+	     {@loop.begin}
+              <ul>
+                <li><span class="art_title"><a href="{@item.linkurl}" target="_blank">{@item.title} </a></span> <span class="class_name">[<a href="{@item.classurl}" target="_blank">{@item.classname}</a>]</span><br />
+               <span class="artintro">{@item.intro}...</span> <br />
+			   <span class="arturl"><a href="{@item.linkurl}" target="_blank">{@item.linkurl}</a></span> <span class="c9">{@item.adddate}</span><br />
+			   </li>
+            </ul>
+        {@loop.end}
+	   <div style="clear:both"></div>
+		 {@search.showpage}
+	   <div style="clear:both"></div>
+		 
+		 
+	</div>	
+	
+	<div style="padding-left:10px;height:50px;" class="relatesearch">
+	  <table width="100%" border="0">
+        <tr>
+          <td width="80" class="xgs">相关搜索:</td>
+          <td align="left">
+            {@search.relative}
+          </td>
+        </tr>
+      </table>
+	 
+	</div>
+	
+	<div style="text-align:center;height:50px;">
+	
+	<form name="searchbform" action="../../plus/search/" method="get">
+	<div class="clear"></div>
+	<div>
+	<b>快速搜索:</b>
+	<input name="key" id="key" size="52" class="i" value="{@search.keyword}" maxlength="100"> 
+	<select name="stype" id="stype"> 
+	  <option value="1">标题</option>
+	  <option value="2">内容</option>
+	  <option value="3">录入</option>
+	</select>
+    <input type=hidden name="m" id="m" value="{@search.channelid}"><input style="padding:3px" type="submit" value=" 搜 索 ">
+	</div>
+	
+	</form>
+
+	</div>
+	
+	  
+ </div>
+ <!--搜索页左边结束-->
+ </body>
+</html>

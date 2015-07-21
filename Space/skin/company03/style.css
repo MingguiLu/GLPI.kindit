@@ -1,0 +1,64 @@
+ /*通用样式*/
+*{margin:0;padding:0;word-wrap:break-word;}
+body,input,button,select,textarea{font:12px/1.75 "宋体", arial, sans-serif,'DejaVu Sans','Lucida Grande',Tahoma,'Hiragino Sans GB',STHeiti,SimSun,sans-serif;color:#444;}
+body{background:#fff url(cms01_05.jpg) repeat-y top center;margin:0 auto;}
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img{border:none;} 
+div,ul,li,p,form{padding: 0px; margin: 0px;list-style-type: none;}
+em{font-style: normal;font-weight: normal;}
+table {padding: 0px; margin: 0px;list-style-type: none;}
+dt,dl,dd {padding: 0px; margin: 0px;list-style-type: none;}
+form{margin:0px;padding:0px;}
+tr {padding: 0px; margin: 0px;list-style-type: none;}
+h3,h4{padding:0px; font-size:14px; font-weight:bold;}
+.clear {clear:both;}
+
+
+.bloghead{text-align:center; margin:0px auto; background:url(cms01_01.jpg) no-repeat top center; height:106px;}
+.blogtop{width:950px; margin:0px auto; padding-top:20px;}
+.blogname{width:500px;float:left;font-size:28px;font-weight:700;line-height:30px;font-family:Arial, Helvetica, sans-serif;color:#fff;padding-left:50px;}
+.blogright{width:400px; float:right; text-align:right;}
+.color_fff{ color:#fff;}
+
+
+.Navigation{width:900px; margin:0px auto; margin-top:11px; *+margin-top:6px;_margin-top:6p;background:url(menu_bg.jpg) no-repeat top center; height:31px; line-height:31px;}
+
+.banner{width:950px; margin:0px auto; background:url(top.jpg) no-repeat top center;height:227px; text-align:center; }
+
+.blogmain{width:940px; margin:0px auto;margin-top:10px;}
+
+.blogmainl{width:625px; float:left;}
+.blogmainl1{ border:#CCC 1px solid;padding:0px;}
+.title_02{background:#f1f1f1 url(icon.gif) no-repeat 5px -92px; font-size:14px; font-weight:bold; color:#000; line-height:33px; padding-left:20px;}
+.blogintro{padding:10px;font-size:14px; line-height:25px;}
+.blogintro a{ color:#005599; text-decoration:underline;height:25px;line-height:25px;}
+
+
+
+.blogmainl2{margin-top:10px; border:#CCC 1px solid;padding:5px;}
+.title_03{background:#f1f1f1 url(icon.gif) no-repeat 5px -155px; font-size:14px; font-weight:bold; color:#000; line-height:33px; padding-left:25px;}
+
+.bloginfo{padding:10px;}
+.bloginfo td{height:26px; line-height:26px;border-bottom:#CCC 1px dotted;}
+.bloginfo a{font-size:12px;color:#005599;}
+.bloginfo span{font-size:12px;}
+
+
+.title_04{background:#f1f1f1 url(icon.gif) no-repeat 5px -180px; font-size:14px; font-weight:bold; color:#000; line-height:33px; padding-left:32px;}
+.blogshow{width:613px;padding:10px;font-size:12px;}
+.blogshow a{ font-size:12px; line-height:25px; color:#000;}
+
+.blogmainr{width:300px; float:right;}
+
+.showpage{font-size:12px;}
+
+.foot{background:url(cms01_06.jpg) repeat-y top center;margin-top:10px; height:45px; font-size:12px; text-align:center; line-height:45px;color:#fff;font-family:Arial, Helvetica, sans-serif;}
+.foot a{color:#fff; text-decoration:underline;}
+
+#Menu { clear:both; text-align:left; margin:0px;}
+#Menu ul li{display:inline;margin:2px;border-right:1px dashed #000;padding-left:5px;padding-right:5px}
+#Menu a:link { text-decoration:none; font-size:14px;}
+#Menu a:visited {font-size:14px;text-decoration:none; }
+#Menu a:hover {color:#DD2000; text-decoration:none; }
+.location{background:#f1f1f1 url(icon.gif) no-repeat 5px -92px; font-size:14px; font-weight:bold; color:#000; line-height:33px; padding-left:20px;}

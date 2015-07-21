@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="gb2312"?>
+<logintemplate>
+    <label name="top">
+    <![CDATA[
+	 <div id="toplogintips"><img src="{$GetSiteUrl}images/loading.gif" align="absmiddle" alt=""/>加载中...</span></div>
+	 <script type="text/javascript">
+	  function getCode(){
+	 document.getElementById('showVerify').innerHTML='<IMG style="cursor:pointer" src="{$GetSiteUrl}plus/verifycode.asp" onClick="this.src=\'{$GetSiteUrl}plus/verifycode.asp?n=\'+ Math.random();" align="absmiddle">';
+	}	
+	  function CheckLoginForm(){
+		var username=document.myform.username.value;
+		var pass=document.myform.password.value;
+		if (username==''){
+		  alert('请输入用户名');
+		  document.myform.username.focus();
+		  return false;}
+		if (pass==''){
+		  alert('请输入登录密码');
+		  document.myform.password.focus();
+		  return false;
+		 }
+		  return true;
+	  } 
+	 jQuery(document).ready(function(){
+		  jQuery.getScript("{$GetInstallDir}user/userlogin.asp?action=checklogin",function(){
+			 jQuery("#toplogintips").html(user.loginstr);
+		  });
+	  })
+	 </script>
+	]]>
+   </label>
+   <label name="popup">
+    <![CDATA[
+	<!--弹窗式登录代码--->
+	 <script type="text/javascript">
+	 function ShowPopLogin()
+	 { 	  
+	   	var p=new KesionPopup();
+		p.MsgBorder=1;
+		p.ShowBackground=false;
+		p.BgColor='#fff';
+		p.TitleCss="font-size:14px;background:#1B76B7;color:#fff;height:22px;";
+	    p.popup("<img src='{$GetInstallDir}user/images/icon18.png' align='absmiddle'>会员登录","<form action='{$GetSiteUrl}user/checkuserlogin.asp' method='post' name='myform'><div id='showloginform' style='background:url({$GetSiteUrl}user/images/loginbg.png) repeat-x;'>加载中...</div></form>",450);
+		  jQuery.getScript("{$GetSiteUrl}user/userlogin.asp?action=PoploginStr",function(){
+		    jQuery("#showloginform").html(userpop.str);
+		  });
+	 }
+	function getCode(){
+	 document.getElementById('showVerify').innerHTML='<IMG style="cursor:pointer" src="{$GetSiteUrl}plus/verifycode.asp" onClick="this.src=\'{$GetSiteUrl}plus/verifycode.asp?n=\'+ Math.random();" align="absmiddle">';
+	}	
+	function CheckLoginForm(){
+		var username=document.myform.Username.value;
+		var pass=document.myform.Password.value;
+		if (username==''){
+		  alert('请输入用户名');
+		  document.myform.Username.focus();
+		  return false;}
+		if (pass==''){
+		  alert('请输入登录密码');
+		  document.myform.Password.focus();
+		  return false;
+		 }
+		  return true;
+	} 
+	jQuery(document).ready(function(){
+		  jQuery.getScript("{$GetSiteUrl}user/userlogin.asp?action=checklogin&s=1",function(){
+		    jQuery("#showuserlogin").html(user.loginstr);
+		  });
+	  })
+	 </script>
+	 <span id="showuserlogin"><img src="{$GetSiteUrl}images/loading.gif" align="absmiddle" alt=""/>加载中...</span>
+	 <!--登录结束--->
+	]]>
+   </label>
+</logintemplate>

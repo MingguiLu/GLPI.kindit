@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{ margin: 10px auto; font: 75%/120% Verdana, Arial, Helvetica, sans-serif; }
+.menu_list {
+           width: 150px; 
+}
+.menu_head { 
+           height:30px;
+		   line-height:30px;
+           padding: 5px 10px; 
+		   cursor: pointer; 
+		   position: relative; 
+		   margin:1px; 
+		   font-size:large; 
+		   font-weight:bold; 
+		   background: #e7fefd url(left.png) center right no-repeat; 
+}
+.menu_body { 
+           display:none;
+}
+.menu_body a {
+             height:30px;
+			 line-height:30px;
+             display:block; 
+			 color:#006699;
+			 background-color:#dffdfc;
+			 padding-left:10px;
+			 text-align:left; 
+			 font-weight:bold; 
+			 text-decoration:none; }
+.menu_body a:hover { 
+                   color: #000000;
+                   text-decoration:underline;  
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+body {background:#fff;font-family:Arial,"宋体"; font-size:12px;color:#000; min-width:980px;}
+a:link,a:visited,a:active{color:#1576ca; text-decoration:none; font-size:12px;star:expression(this.onFocus=this.blur());}
+a:hover{color:#f00; text-decoration:underline;font-size:12px;}
+a:focus {outline:0;}
+ul,dl,li,dd,dl {list-style:none;}
+img {border:none;}
+.clear {clear:both; height:0px; overflow:hidden}
+.gehang {clear:both; height:18px; width:18px; overflow:hidden;}
+.none ,.tab_none{display:none;}
+.tab_block {display:block}
+
+#soso { background:url(soso.png) no-repeat 0 10px; width:200px; height:36px; clear:both; padding:50px 10px 10px;}
+	#soso .textbox { display:block; width:158px; border:none; height:20px; line-height:20px; background:none; text-indent:5px; float:left}
+	#soso .inputButton { display:block; width:40px; height:24px; float:right; border:none;background:none; text-indent:-999em; cursor:pointer;}
+</style>
+</head>
+
+<body>
+
+<div id="soso">
+	<h3 class="none">站内搜索</h3>
+	<form id="SearchForm" name="SearchForm" method="Get" action="/plus/search/" target="_blank">
+	 <input name="key" type="text" class="textbox" id="textbox" value="请输入关键字"/>
+	<script language="JavaScript" type="text/javascript">
+	   function addListener(element,e,fn){
+			if(element.addEventListener){
+				 element.addEventListener(e,fn,false);
+			 } else {
+				 element.attachEvent("on" + e,fn);
+			  }
+	  }
+	   var myinput = document.getElementById("textbox");
+	   addListener(myinput,"click",function(){
+		myinput.value = "";
+	  })
+	   addListener(myinput,"blur",function(){
+		myinput.value = "请输入关键字";
+	   })
+	</script>
+	<select style="display:none" name="m">
+	<option value="0">全部</option>
+	<option value="1">文章</option>
+	<option value="111">链接</option>
+	</select>
+	<input type="Submit" class="inputButton" name="Submit1"/>
+	</form>
+</div>
+</body>
+</html>

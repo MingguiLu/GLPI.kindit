@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML><HEAD><TITLE> 
+New Document </TITLE>
+<META content="text/html; charset=gb2312" http-equiv="Content-Type">
+<META name="GENERATOR" content="MSHTML 9.00.8112.16464">
+<META name="Author" content="">
+<META name="Keywords" content="">
+<META name="Description" content="">
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="js/16sucai.js"></script>
+<link href="css/css_xiala.css" rel="stylesheet" type="text/css" />
+<STYLE type="text/css">
+  #total {
+         width:1170px;
+		 height:1100px;
+		 margin:auto;
+		 border:none;
+  }
+  #one {
+        width:170px;
+        height:1000px;
+		marging:auto 0;
+		border:2px red solid;
+		position:relative;
+        float:left;
+  }
+  #logo {
+         width:122px;
+		 height:60px;
+		 marging-top:10px;
+		 border:1px green solid;
+		 position:absolute;
+		 left:4px;
+		 top:15px;
+  }
+  #menu {
+         width:150px;
+		 height:500px;
+		 marging:15px auto;
+		 border:1px green solid;
+		 position:absolute;
+		 left:10px;
+		 top:90px;
+  }
+  #menu ul {
+            width:110px;
+			
+  }
+  #menu ul li {
+               width:110px;
+			   height:30px;
+			   font-size:14;
+			   text-aglign:left;
+			   list-style-type:none;
+  }
+  #two {
+        width:670px;
+		height:1000px;
+		marging:0 auto auto 0;
+		border:2px green solid;
+		position:relative;
+		float:left;
+  }
+  #content {
+          width:630px;
+		  height:1000px;
+		  border:1px red solid;
+		  positive:relative;
+		  float:left;
+		  margin-left:20px;
+		  margin-top:0px;
+  }
+  #content-logo {
+               width:628px;
+			   height:48px;
+			   position:relative;
+			   float:left;
+			   border:1px purple solid;
+  }
+  #content-path {
+               width:628px;
+			   height:48px;
+			   position:relative;
+			   float:left;
+			   border:1px purple solid;
+  }
+  #content-text {
+               width:628px;
+			   height:880px;
+			   position:relation;
+			   float:left;
+			   border:1px purple solid;
+  }
+  #three {
+          width:315px;
+		  height:1000px;
+		  marging:auto;
+		  border:2px yellow solid;
+		  position:relative;
+		  float:right;
+  }
+  #links {
+         width:305px;
+		 height:450px;\
+		 position:relative;
+		 float:left;
+		 margin-top:0px;
+		 margin-left:5px;
+		 border:1px purple solid;
+  }
+  #three-logo {
+              width:315px;
+			  height:100px;
+			  position:relative;
+			  float:left;
+			  border:1px purple solid;
+  }
+  #print {
+          width:305px;
+		  height:450px;
+          position:relative;
+		  float:left;
+		  margin-top:0px;
+		  margin-left:5px;
+		  border:1px purple solid;
+  }
+  #foot {
+         width:1130px;
+		 height:100px;
+         position:relative;
+         float:left;
+		 border:1px yellow solid;
+  }
+  .foot-logo {
+              position:relation;
+			  float:left;
+  }
+
+  </STYLE>
+
+</HEAD>
+
+<BODY>
+   <DIV id="total">
+       <DIV id="one">
+           <DIV id="logo">
+		      <img src="images/logo.gif" width="122" height="57" padding="auto" />
+		   </DIV>
+           <DIV id="menu">
+
+<div style="float:left; margin-left:0px;">
+  <!--This is the second division of right-->
+  <!--<p><strong> 鼠标经过 </strong></p>-->
+  <div class="menu_list" id="secondpane">
+    <!--Code for menu starts here-->
+    <p class="menu_head">首页</p>
+	<div class="menu_body"> <a href="#">访问首页</a></div>
+    <p class="menu_head">工作日志</p>
+    <div class="menu_body"> <a href="#">查看工作日志</a></div>
+	<p class="menu_head">HelpDesk</p>
+    <div class="menu_body"> <a href="#">查看HelpDesk记录</a></div>
+    <p class="menu_head">操作流程</p>
+    <div class="menu_body"> <a href="#">IT部</a> <a href="#">销售部</a> <a href="#">网站部</a> </div>
+    <p class="menu_head">技术姿势</p>
+    <div class="menu_body"><a href="#">OutLook</a> <a href="#">IE</a> <a href="#">MDT</a> <a href="#">Symantec</a> <a href="#">DELL</a><a href="#">HP Print</a> </div>
+	<p class="menu_head">搜索</p>
+  </div>
+  <!--Code for menu ends here-->
+</div>
+		   </DIV>
+	   </DIV>
+
+       <DIV id="two">
+           <DIV id="content">
+		       <div id="content-logo">
+			      <img src="images/logo-1.jpg" width=628px; height=48px; />
+			   </div>
+			   <div id="content-path">
+			      <img src="images/logo-1.jpg" width=628px; height=48px; />
+			   </div>
+			   <div id="content-text"></div>
+			   </div>
+		   </DIV>
+
+       <DIV id="three">
+	       <div id="links"></div>
+		   <div id="three-logo">
+		      <img src="images/three-logo.jpg" width=315px; height=100px; />
+		   </div>
+		   <div id="print"></div>
+	   </DIV>
+
+	   <div id="foot">
+	       <img class="foot-logo" src="images/foot-logo.jpg" width=565px; height=100px; />
+		   <img class="foot-logo" src="images/foot-logo.jpg" width=565px; height=100px; />
+	   </div>
+   </DIV>
+</BODY>
+
+</HTML>
